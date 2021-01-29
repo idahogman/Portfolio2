@@ -1,0 +1,659 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* list-style-type: none; */
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+
+}
+
+main {
+    overflow: hidden;
+}
+
+a {
+    color: #0D1821;
+  }
+  
+  a:visited {
+    color: #0D1821;
+  }
+
+a:hover {
+    color: #85BDBF;
+}
+
+button {
+    font-family: "poppins", sans-serif;
+    border: 2px solid #0D1821;
+    color: #0D1821;
+    background: transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 20px 20px 0px;
+    border-radius: 4px;
+}
+
+.deepblue button {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+button:hover{
+    color:#85BDBF;
+    border: 2px solid #85BDBF;
+}
+
+h2,
+h3 {
+    color: #57737A;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 150%;
+    padding-bottom: 10px;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    font-size: 18px;
+}
+
+article {
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    padding: 100px 0px 100px 0px;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.banner {
+    width: 100%;
+    padding: 20px;
+    /* background-color: linear-gradient(to right, #57737A, #85BDBF); */
+    color: #ffffff;
+    background-color: #0D1821;
+    justify-content: center;
+}
+
+.banner p {
+    text-align: center;
+    margin: auto;
+    font-weight: 500;
+}
+
+.logo-container, 
+.nav-links {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav {
+    flex: 2;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    color: #0D1821;
+    text-decoration: none;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #57737A, #85BDBF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #0D1821;
+}
+
+.cta {
+    padding: 50px 0px 0px 0px;
+}
+
+.cover {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.cover-cv {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.cover img {
+    height: 100%;
+    filter: drop-shadow(0px 20px 30px rgba(73, 73, 73, 0.5));
+    animation: drop;
+    margin: 20px;
+}
+
+.cover-cv img {
+    height: 100%;
+    filter: drop-shadow(0px 20px 30px rgba(73, 73, 73, 0.5));
+    animation: drop;
+    margin: 20px;
+    border: 4px dashed #57737A;
+}
+
+.deepblue {
+    background-color: #0D1821;
+    display: flex;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    overflow: auto;
+}
+
+.reference {
+    padding: 30px;
+    flex: 1;
+}
+
+.deepblue h2 {
+    color: #C2FCF7;
+    margin-bottom: 20px;
+}
+
+.reference p {
+    margin-bottom: 20px;
+}
+
+.reference button {
+    float: left;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.cards a {
+    color: black;
+    text-decoration: none;
+}
+
+.card {
+position: relative;
+border-radius: 5px;
+overflow: hidden;
+margin: 50px;
+height: 300px;
+width: 300px;
+}
+
+.card img {
+min-height: 100%;
+min-width: 100%;
+max-height: 130%;
+max-width: 130%;
+position: absolute;
+}
+
+.card img:hover {
+opacity: 0;
+transition: opacity 1s;
+}
+
+.card h2 {
+text-align: center;
+}
+
+.card p {
+z-index: -1;
+width: 100%;
+display: inline-block;
+text-align: center;
+padding: 20px;
+}
+
+.deepblue-list-box {
+    margin: 0px auto 50px auto; 
+    margin-bottom: 50px;
+}
+
+.deepblue-list {
+    columns: 2;
+}
+
+.deepblue-list-2 {
+    columns: 1;
+}
+
+.deepblue-list li {
+    position: relative; /*Håller kvar bullets*/
+    list-style-type: none;
+    padding-left: 40px; /*Särar på bullets o text*/
+    /* padding-right: 50px; */
+    margin-bottom: 8px; /*Avstånd mellan rader*/
+}
+
+.deepblue-list li:before {
+    content: ''; /*Behåller bullets*/
+    display: block;
+    position: absolute; /*Särar på bulllets och text*/
+    left: 0; /*-''-*/
+
+    /* Design av bullet */
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #C2FCF7;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+.deepblue-list-2 li {
+    position: relative; /*Håller kvar bullets*/
+    list-style-type: none;
+    padding-left: 40px; /*Särar på bullets o text*/
+    /* padding-right: 50px; */
+    margin-bottom: 8px; /*Avstånd mellan rader*/
+}
+
+.deepblue-list-2 li:before {
+    content: ''; /*Behåller bullets*/
+    display: block;
+    position: absolute; /*Särar på bulllets och text*/
+    left: 0; /*-''-*/
+
+    /* Design av bullet */
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #C2FCF7;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+.fun-fact {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.fun-fact img {
+    width: 40%;
+    margin: auto;
+    border-radius: 50%;
+    filter: drop-shadow(0px 20px 30px rgba(73, 73, 73, 0.5));
+    padding: 50px;
+    min-width: 400px;
+}
+
+.white-list-box {
+    /* width: 60%; */
+    margin: auto;
+    padding: 40px;
+}
+
+.white-list {
+    columns: 2;
+    /* padding-left: 19px; Flyttar hela listan till höger */
+}
+
+.white-list li {
+    position: relative; /*Håller kvar bullets*/
+    list-style-type: none;
+    padding-left: 40px; /*Särar på bullets o text*/
+    padding-right: 50px;
+    margin-bottom: 8px; /*Avstånd mellan rader*/
+}
+
+.white-list li:before {
+    content: ''; /*Behåller bullets*/
+    display: block;
+    position: absolute; /*Särar på bulllets och text*/
+    left: 0; /*-''-*/
+
+    /* Design av bullet */
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #57737A;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
+.white-list-box h2,
+.deepblue-list-box h2 {
+    text-align: center;
+}
+
+footer {
+    justify-content: center;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.footer-contact {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    align-items: baseline;
+    padding: 10px 50px;
+}
+
+.contact-info img {
+    vertical-align: middle;
+    padding: 0px 10px;
+}
+
+footer p {
+    margin: 15px 0px;
+    color: #0D1821;
+    font-size: 10px;
+}
+
+.icons8 a {
+    text-decoration: underline;
+}
+
+.studiescard {
+    padding: 40px 0px;
+    border-bottom: 2px solid #57737A;
+}
+
+.intro-text.friendly-foodie h1 {
+    background: linear-gradient(to right, #1C5F2F, #61D181);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.deepblue.friendly-foodie {
+    /* background-color: #206F36; */
+    background: linear-gradient(to top, #1C5F2F, #61D181);    
+
+}
+
+.deepblue.friendly-foodie h2 {
+    color: #ffffff;
+}
+
+.friendly-foodie.article h4 {
+    margin-bottom: 12px;
+}
+
+.friendly-foodie.article h2 {
+    margin-top: 50px;
+    color: #1C5F2F;
+}
+
+.friendly-foodie.article h3 {
+    margin-top: 30px;
+    color: #1C5F2F;
+}
+.friendly-foodie.article img {
+    width: 90%;
+    margin: auto;
+}
+
+.friendly-foodie.article.section {
+    width: 90%;
+    padding: 10px 0px;
+}
+
+.research.img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.research.img img{
+    margin: auto;
+    width: 30%;
+}
+
+.research.img a {
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.friendly-foodie.list.process {
+    columns: 2;
+}
+
+.friendly-foodie.list-item {
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+.contact {
+    width: 90%;
+}
+
+.contact a {
+    font-style: italic;
+}
+
+/* #2b9348 */
+
+@media screen and (max-width: 1068px) {
+    p {
+        margin-bottom: 7px;
+        font-size: 14px;
+    }
+
+    .fun-fact {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .deepblue {
+        justify-content: space-evenly;
+    }
+
+    .deepblue-list-box {
+        margin: 0px 40px 20px 10px;
+    }
+
+    .deepblue-list-box h2 {
+        text-align: left;
+    }
+
+    .deepblue-list {
+        columns: 1;
+    }
+
+    .white-list li {
+        padding-right: 0px;
+    }
+
+    .white-list {
+        columns: 1;
+        margin: auto;
+    }
+
+    .deepblue-list-box.friendly-foodie {
+        width: min-content;
+    }
+    
+    .deepblue.friendly-foodie h2 {
+        text-align: center;
+    }
+
+    .deepblue-list.deepblue-list.friendly-foodie {
+        columns: 2;
+    }
+    
+    .research.img img {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    header {
+        flex-direction: column;
+        margin-bottom: 4vh;
+    }
+
+    article {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .cards {
+        width: 80%;
+    }
+
+    .card {
+        margin: 50px auto;
+    }
+
+    .logo {
+    margin: 5px;
+    }
+
+    .nav-link {
+        margin: 10px;
+    }
+
+    .presentation {
+    flex-direction: column;
+    }
+
+    .introduction {
+        margin: 3vh;
+        text-align: center;
+    }
+
+    .intro-text h1 {
+        font-size: 30px;
+    }
+
+    .intro-text p {
+        font-size: 18px;
+    }
+
+    .cta {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .cover img,
+    .cover-cv img {
+        height: 100%;
+        margin: auto;
+    }
+    .deepblue {
+        flex-wrap: wrap;
+    }
+
+    .fun-fact {
+        flex-wrap: wrap;
+    }
+
+    .deepblue-list-box,
+    .white-list-box {
+        margin: 30px auto;
+        justify-content: center;
+    }
+
+    .white-list-box {
+        padding: 0%;
+    }
+
+    .white-list-box h2 {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .deepblue-list-box.list-2 {
+        width: 90%;
+    }
+
+    .deepblue-list,
+    .white-list {
+        columns: 1;
+    }
+
+    .white-list li {
+        width: 70%;
+        margin: auto;
+    }
+
+    .fun-fact img {
+        min-width: 350px;
+    }
+
+    .research.img img {
+        width: 90%;
+    }
+
+    .friendly-foodie.list.process {
+        columns: 1;
+    }
+
+    .friendly-foodie.list-item {
+        font-size: 14px;
+    }
+}
