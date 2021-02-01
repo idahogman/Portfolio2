@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
-
 }
 
 main, .card {
@@ -529,7 +528,7 @@ article section {
     }
 
     .logo {
-    margin: 5px;
+    padding: 5px;
     }
 
     .nav-link {
