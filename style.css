@@ -516,10 +516,18 @@ article section {
 
 @media screen and (max-width: 576px) {
 
+    .skip-to-content-link {
+        visibility: hidden;
+    }
+
     header {
-        flex-direction: column;
+        flex-wrap: wrap;
         margin-bottom: 4vh;
         margin-top: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
     }
 
     article {
