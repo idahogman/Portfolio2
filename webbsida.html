@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Ida Hogman - Projekt Webbsida</title>
@@ -10,14 +11,14 @@
     <a class="skip-to-content-link" href="#main">Hoppa till innehåll</a>
     <header>
         <div class="logo-container">
-            <h4 class="logo">Ida Hogman</h4>
+            <div class="logo">Ida Hogman</div>
         </div>
         <nav>
             <ul class="nav-links">
                 <li><a class="nav-link" href="./index.html">Startsida</a></li>
                 <li><a class="nav-link" href="./cv.html">CV</a></li>
                 <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-                <li><a class="nav-link" href="./kontakt.html"><strong>Kontakt</strong></a></li>
+                <li><a class="nav-link" href="./kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -41,102 +42,106 @@
         </section>
 
         <article>
-            <h2>Inledning</h2>
-            <p>Lagom till att det var dags att skapa en portfolio för att söka LIA och sommarjobb så började kursen 
-                webbutveckling i skolan. Jag bestämde mig då för att försöka utveckla min egna portfolio. När jag 
-                börja mitt arbete var jag medveten om att detta kanske inte skulle kunna vara en portfolio som går 
-                att släppa och som framförallt inte är lika snygg som om jag hade använt en webbportal. Anledningen 
-                till att jag ville göra min egna webbsida var för att jag ville utveckla mina kunskaper inom CSS och 
-                HTML.</p>
-            <p>Var gärna medveten om att arbetet med webbsidan har framförallt varit för att lära mig kodning. 
-                Designprocessen och research har inte varit en del utav arbetet.</p>
+            <section>
+                <h2>Inledning</h2>
+                <p>Lagom till att det var dags att skapa en portfolio för att söka LIA och sommarjobb så började kursen 
+                    webbutveckling i skolan. Jag bestämde mig då för att försöka utveckla min egna portfolio. När jag 
+                    börja mitt arbete var jag medveten om att detta kanske inte skulle kunna vara en portfolio som går 
+                    att släppa och som framförallt inte är lika snygg som om jag hade använt en webbportal. Anledningen 
+                    till att jag ville göra min egna webbsida var för att jag ville utveckla mina kunskaper inom CSS och 
+                    HTML.</p>
+                <p>Var gärna medveten om att arbetet med webbsidan har framförallt varit för att lära mig kodning. 
+                    Designprocessen och research har inte varit en del utav arbetet.</p>
+            </section>
             
-            <h2>Första försöket</h2>
-            <p>När jag skulle börja mitt arbete så började jag med startsidan. Jag hade redan bestämt mig för vad 
-                jag vill ha med för information. Jag spenderade många timmar på att få in olika element i koden. 
-                Gällande tillgänglighet så hade jag inte jättemycket koll på vad man kan göra i koden, jag visste 
-                att tabordningen ska vara korrekt och att bilder ska beskrivas med "alt-attribut". Jag börja från 
-                toppen och arbeta mig nedåt.</p>
-            <p>Jag blev faktiskt nöjd med resultatet, jag vet att jag har en bättre känsla för design än vad 
-                webbsidan visar men de olika delarna av webbsidan var snyggt uppradade och jag hade lyckats få in 
-                placeholders för framtida bilder.</p>
-            <p>Därefter började jag arbeta med nästa sidan, mitt CV. Där blev det helt plötsligt mycket svårare. 
-                Mycket av CSS:en som jag hade gjort på startsidan gick inte att använda på nästa sida. Att börja ta 
-                in listor och "cards" för mina erfarenheter behövde en helt egen CSS. De som kan programmera vet att 
-                sorteringen i CSS:en är viktig när koden börjar bli lång, och jag hade helt tappat greppet om vart 
-                saker skulle ligga. När jag därefter försökte få sidan responsiv så var det för komplicerat att välja 
-                rätt klasser för rätt CSS.</p>
-            <p>Där avslutade jag arbetet med den webbsidan. Jag bestämde mig för att börja om på ett tomt papper och 
-                använda det bra från koden, texter och arkitekturen. Men att vara mer förberedd på vad jag vill ha i 
-                CSS:en från början.</p>
+            <section>
+                <h2>Första försöket</h2>
+                <p>När jag skulle börja mitt arbete så började jag med startsidan. Jag hade redan bestämt mig för vad 
+                    jag vill ha med för information. Jag spenderade många timmar på att få in olika element i koden. 
+                    Gällande tillgänglighet så hade jag inte jättemycket koll på vad man kan göra i koden, jag visste 
+                    att tabordningen ska vara korrekt och att bilder ska beskrivas med "alt-attribut". Jag börja från 
+                    toppen och arbeta mig nedåt.</p>
+                <p>Jag blev faktiskt nöjd med resultatet, jag vet att jag har en bättre känsla för design än vad 
+                    webbsidan visar men de olika delarna av webbsidan var snyggt uppradade och jag hade lyckats få in 
+                    placeholders för framtida bilder.</p>
+                <p>Därefter började jag arbeta med nästa sidan, mitt CV. Där blev det helt plötsligt mycket svårare. 
+                    Mycket av CSS:en som jag hade gjort på startsidan gick inte att använda på nästa sida. Att börja ta 
+                    in listor och "cards" för mina erfarenheter behövde en helt egen CSS. De som kan programmera vet att 
+                    sorteringen i CSS:en är viktig när koden börjar bli lång, och jag hade helt tappat greppet om vart 
+                    saker skulle ligga. När jag därefter försökte få sidan responsiv så var det för komplicerat att välja 
+                    rätt klasser för rätt CSS.</p>
+                <p>Där avslutade jag arbetet med den webbsidan. Jag bestämde mig för att börja om på ett tomt papper och 
+                    använda det bra från koden, texter och arkitekturen. Men att vara mer förberedd på vad jag vill ha i 
+                    CSS:en från början.</p>
+            </section>
 
-            <h2>Andra försöket</h2>
-            <p>När jag började med mitt andra försök så hade jag mycket mer att luta mig på än i första försöket. Kanske 
-                borde jag som studerar till UX Designer ha skapat wireframes innan, men på grund av tidsbrist till min 
-                första inlämning i kursen så var det bättre att lära mig koda än att tänka på det visuella och interaktiva 
-                för att ha något att lämna in i skolan.</p>
-            <p>Jag hade lärt mig att det är bättre att som nybörjare hålla det simpelt med återanvändbara klasser och att 
-                arbeta med responsiviteten under arbetets gång istället för att försöka klistra ihop det senare. </p>
-            <p>Jag använde google, youtube och såklart min lärare för att få hjälp genom arbetet. Vissa saker har varit 
-                svåra, jag höll på att bråka med bilder och listor som ville bli bredare än skärmen i två dagar innan jag 
-                förstod var jag kunde åtgärda problemet, därefter har jag inte haft något problem med det alls.</p>
-            <p>I footern blev jag tokig på att mina länkar la sig fult i iPad-storlek, men efter att ha pratat med min 
-                handledare så kom vi fram till att det enda jag behövde var EN rad i koden som jag hade missat. </p>
-            <p>Min nästa utmaning är att städa i mitt CSS, jag har alldeles för många rader som går att sätta ihop.</p>
+            <section>
+                <h2>Andra försöket</h2>
+                <p>När jag började med mitt andra försök så hade jag mycket mer att luta mig på än i första försöket. Kanske 
+                    borde jag som studerar till UX Designer ha skapat wireframes innan, men på grund av tidsbrist till min 
+                    första inlämning i kursen så var det bättre att lära mig koda än att tänka på det visuella och interaktiva 
+                    för att ha något att lämna in i skolan.</p>
+                <p>Jag hade lärt mig att det är bättre att som nybörjare hålla det simpelt med återanvändbara klasser och att 
+                    arbeta med responsiviteten under arbetets gång istället för att försöka klistra ihop det senare. </p>
+                <p>Jag använde google, youtube och såklart min lärare för att få hjälp genom arbetet. Vissa saker har varit 
+                    svåra, jag höll på att bråka med bilder och listor som ville bli bredare än skärmen i två dagar innan jag 
+                    förstod var jag kunde åtgärda problemet, därefter har jag inte haft något problem med det alls.</p>
+                <p>I footern blev jag tokig på att mina länkar la sig fult i iPad-storlek, men efter att ha pratat med min 
+                    handledare så kom vi fram till att det enda jag behövde var EN rad i koden som jag hade missat. </p>
+                <p>Min nästa utmaning är att städa i mitt CSS, jag har alldeles för många rader som går att sätta ihop.</p>
+            </section>
 
-            <h2>Det visuella</h2>
-            <p>Jag tycker absolut att det finns många vackrare webbplatser där ute, och jag hoppas att min webbsida 
-                kommer kännas lika vacker en dag. Men just nu är jag nöjd. Jag har med hjälp av 
-                <a href="https://coolors.co" target="_blank">coolors.co</a>  fått fram vackra paletter och jag har 
-                testat kontrasten mellan element. </p>
-            <p>Att ta bilder var något nytt för mig. Jag tvinga ut min sambo med hans nya mobilkamera och han var riktigt 
-                bra hjälp. Jag tycker att det är lite tråkigt att alla bilder är från samma dag, men förhoppningsvis dyker 
-                det upp något nytt i framtiden.</p>
+            <section>
+                <h2>Det visuella</h2>
+                <p>Jag tycker absolut att det finns många vackrare webbplatser där ute, och jag hoppas att min webbsida 
+                    kommer kännas lika vacker en dag. Men just nu är jag nöjd. Jag har med hjälp av 
+                    <a href="https://coolors.co" target="_blank">coolors.co</a>  fått fram vackra paletter och jag har 
+                    testat kontrasten mellan element. </p>
+                <p>Att ta bilder var något nytt för mig. Jag tvinga ut min sambo med hans nya mobilkamera och han var riktigt 
+                    bra hjälp. Jag tycker att det är lite tråkigt att alla bilder är från samma dag, men förhoppningsvis dyker 
+                    det upp något nytt i framtiden.</p>
+            </section>
 
-            <h2>Tillgänglighet</h2>
-            <p>Jag har valt semantisk kodning och har döpt alla bilder, sett till att ha så lite text som möjligt i bilder. 
-                Tyvärr blir det mer under beskrivningen av projekt för då har jag behövt ta bild på delar med text i. Men i 
-                övrigt har jag sett till att hålla mig till text utanför bilder.</p>
-            <p>Jag har gått igenom alla sidor med plugin-programmen "Wave" och Siteimprove Accessibility Checker. Med det så 
-                la jag till alt-attribut och ändra om bland rubrikerna till en mer hierarkisk ordning. Prestande är ännu inte 
-                testat men kommer absolut göras.</p>
+            <section>
+                <h2>Tillgänglighet</h2>
+                <p>Jag har valt semantisk kodning och har döpt alla bilder, sett till att ha så lite text som möjligt i bilder. 
+                    Tyvärr blir det mer under beskrivningen av projekt för då har jag behövt ta bild på delar med text i. Men i 
+                    övrigt har jag sett till att hålla mig till text utanför bilder.</p>
+                <p>Jag har gått igenom alla sidor med plugin-programmen "Wave" och Siteimprove Accessibility Checker. Med det så 
+                    la jag till alt-attribut och ändra om bland rubrikerna till en mer hierarkisk ordning. Prestande är ännu inte 
+                    testat men kommer absolut göras.</p>
+            </section>
 
-            </article>
-
-            <div class="container">
-                <!-- <h2>Feedback</h2> -->
+            <section class="writeme">
+                <h2>Feedback!</h2>
                 <p>Jag tar gärna emot feedback gällande webbplatsen. Den kommer såklart vara under utveckling hela tiden och jag 
                     är fortfarande ny gällande UI, UX och Webbutveckling.</p>
-                <form action="action_page.php">
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="fname">Ditt namn (frivilligt)</label>
-                    </div>
-                    <div class="col-75">
-                      <input type="text" id="flname" name="name" placeholder="Ditt namn...">
-                    </div>
+                <form class="form" onsubmit="sendMessage(event)">
+                  <div class="formItem">
+                    <label for="name">Namn (frivilligt)</label>
+                    <input type="text" name="name" id="name" />
                   </div>
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="lname">Email (frivilligt)</label>
-                    </div>
-                    <div class="col-75">
-                      <input type="email" id="mail" name="email" placeholder="E-mail...">
-                    </div>
+                  <div class="formItem">
+                    <label for="email">Email (frivilligt)</label>
+                    <input type="email" name="email" id="email" />
                   </div>
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="subject">Ge gärna feedback på min webbsida!</label>
-                    </div>
-                    <div class="col-75">
-                      <textarea id="subject" name="subject" placeholder="Skriv här..." style="height:200px"></textarea>
-                    </div>
+                  <div class="formItem">
+                    <label for="message">Ge gärna feedback på den här webbplatsen!</label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
                   </div>
-                  <div class="row">
-                    <input type="submit" value="Skicka">
+                  <div class="formItem">
+                    <input class="submitButton" type="submit" value="Skicka" />
                   </div>
                 </form>
-            </div>
+                <p id="thankyouMessage"></p>
+            </section>
+            </article>
+            
 
             <footer class="footer">
                 <div class="footer-logo-container">
