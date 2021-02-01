@@ -513,6 +513,7 @@ article section {
     header {
         flex-direction: column;
         margin-bottom: 4vh;
+        margin-top: 10px;
     }
 
     article {
