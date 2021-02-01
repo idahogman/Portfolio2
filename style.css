@@ -53,10 +53,28 @@ h3 {
     margin-bottom: 20px;
 }
 
+article h2 {
+    margin-top: 50px;   
+}
+
 p {
     line-height: 150%;
     padding-bottom: 10px;
 }
+
+.skip-to-content-link {
+    background: #D8FDFA;
+    height: 40px;
+    left: 40%;
+    padding: 10px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .skip-to-content-link:focus {
+    transform: translateY(0%);
+  }
 
 header {
     display: flex;
@@ -94,6 +112,7 @@ section {
     text-align: center;
     margin: auto;
     font-weight: 500;
+    padding-bottom: 0px;
 }
 
 .logo-container, 
@@ -445,7 +464,6 @@ footer p {
 }
 
 .friendly-foodie.article h2 {
-    margin-top: 50px;
     color: #1C5F2F;
 }
 
@@ -494,6 +512,62 @@ footer p {
 .contact a {
     font-style: italic;
 }
+
+/* Style inputs, select elements and textareas */
+input[type=text], input[type=email], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin: 20px auto;
+  }
+  
+  /* Style the container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 /* #2b9348 */
 
@@ -547,6 +621,15 @@ footer p {
     
     .research.img img {
         width: 45%;
+    }
+
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+
+    .input[type=submit] {
+        margin-top: 20px;
     }
 }
 
