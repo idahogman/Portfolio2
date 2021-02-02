@@ -573,6 +573,7 @@ article section {
 
     .cta {
         padding: 10px 0px 0px 0px;
+        margin: auto;
     }
 
     .cover img, .cover-cv img, .white-list-box h2, .white-list li {
