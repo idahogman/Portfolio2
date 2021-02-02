@@ -525,7 +525,10 @@ article section {
         margin-bottom: 4vh;
         margin-top: 10px;
         height: auto;
-        line-height: 150%;
+    }
+
+    .logo {
+        visibility: hidden;
     }
 
     article {
