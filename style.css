@@ -62,6 +62,16 @@ p {
 }
 
 
+.deepblue {
+    color: #ffffff;
+    overflow: auto;
+}
+
+.deepblue p {
+    color: #ffffff;
+}
+
+
 .skip-to-content-link, .logo {
     padding: 10px;
 }
@@ -221,11 +231,6 @@ nav {
 
 .deepblue, .contact-info {
     align-items: baseline;
-}
-
-.deepblue {
-    color: white;
-    overflow: auto;
 }
 
 .reference {
