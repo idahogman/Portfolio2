@@ -524,10 +524,7 @@ article section {
         flex-wrap: wrap;
         margin-bottom: 4vh;
         margin-top: 10px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
+        height: auto;
     }
 
     article {
